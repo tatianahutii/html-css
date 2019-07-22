@@ -1,0 +1,28 @@
+.page-wrapper
+{
+    max-width: 1200px;
+    margin-right: auto;
+  margin-left: auto;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 1em;
+  }
+  
+  header,
+  footer {
+    grid-column: 1 / span 2;
+  }
+
+  header
+  {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }

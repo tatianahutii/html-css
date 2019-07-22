@@ -1,0 +1,69 @@
+.logo
+{
+    min-height: 100px;
+    max-width: 150px;
+}
+
+.column
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+
+.flex-header-container
+{
+  display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.social-menu
+{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.icon
+{
+    max-width: 20px;
+    margin-left: 5px;
+    color: white
+}
+
+.hamburger-icon {
+  font-size: 1.5rem;
+}
+
+.top-item
+{
+    width: 40%; 
+    align-self: left;
+}
+
+.bottom-item
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.3em;
+    width: 60%
+}
+
+.menu
+{
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.5em;
+}
+
+.menu .menu-item
+{
+    margin: 0.3em;
+}
+
+#menuToggle
+{
+  display: none;
+}
