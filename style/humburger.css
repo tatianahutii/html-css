@@ -3,28 +3,52 @@
 {
   text-decoration: none;
   color: #232323;
-  
+ 
   transition: color 0.3s ease;
 }
 
-header
+.magnifier-icon
 {
   display: flex;
-  flex-direction: column;
+  align-self: center;
 }
 
-.header-top-line
+.right-header-part
 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.bottom-item
+.header-wrwpper
+{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.social-menu
+{
+  display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.small-main-logo
+{
+  display: flex;
+    justify-content: center;
+}
+
+.main-menu
 {
   display: none;
 }
 
-.column
+.skype-icon,
+.twitter-icon,
+.linkedin-icon,
+.facebook-icon
 {
   display: none;
 }
@@ -38,8 +62,6 @@ a:hover
 {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
   
   z-index: 1;
   
@@ -133,8 +155,8 @@ a:hover
 {
   position: absolute;
   width: 300px;
+  height: 650px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
   padding-top: 125px;
   
   background: #ededed;
@@ -151,6 +173,7 @@ a:hover
 #menu li
 {
   padding: 10px 0;
+  padding-left: 3rem;
   font-size: 22px;
 }
 
