@@ -1,7 +1,7 @@
 .main-wrapper
 {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   grid-gap: 1rem;
   justify-content: center;
 }
@@ -24,7 +24,6 @@
 .product-details {
   display: flex;
   flex-direction: column;
-	position: relative;
 	text-align: left;
 	overflow: hidden;
 	padding: 30px;
@@ -38,7 +37,6 @@
 .container .product-details h1{
 	font-family: 'Old Standard TT', serif;
 	display: inline-block;
-	position: relative;
 	font-size: 34px;
 	color: #344055;
 	margin: 0;
@@ -57,13 +55,12 @@
   text-align: center;
   overflow: hidden;
 	font-size: 15px;
-	color: #7d7d7d;	
+	color: black;	
 }
 
 .product-image {
   transition: all 0.3s ease-out;
   display: flex;
-	position: relative;
 	overflow: hidden;
 	height: 100%;
 	max-width: 50%;

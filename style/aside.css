@@ -1,8 +1,8 @@
 .aside-wrapper
 {
-  width: 40%;
-  display: grid;
-  grid-gap: 3%; 
+  width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .foto
@@ -13,7 +13,7 @@
 
 .author-foto
 {
-  width: 60%;
+  width: 50%;
   height: auto;
   display: block;
   align-self: center;
@@ -22,10 +22,12 @@
 .author-information
 {
   padding-top: 5%;
+  margin-bottom: 10%;
+  margin-right: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
- border: 4px double palevioletred;
+ border: 4px double blueviolet;
 }
 
 .author-name
@@ -49,18 +51,33 @@
 {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10%;
+  margin-right: 5%;
+}
+
+.subscribe{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .group {
+  display: block;
   position: relative;
   margin-bottom: 30px;
+}
+
+.group-btn
+{
+  display: flex;
+  width: 100%;
 }
 
 .subscribe-input {
   font-size: 16px;
   padding: 10px;
   display: block;
-  width: 300px;
+  width: 80%;
   border: none;
   border-bottom: 1px solid #ccc;
 }
@@ -70,9 +87,10 @@
   font-size: 16px;
   padding: 10px;
   display: block;
-  width: 60%;
+  width: 75%;
   border: none;
   border-bottom: 1px solid #ccc;
+  margin-right: 5%;
 }
 input:focus {
   outline: none;
@@ -94,13 +112,13 @@ label {
 input:focus ~ label, input:valid ~ label {
   top: -15px;
   font-size: 14px;
-  color:palevioletred;
+  color:blueviolet;
 }
 
 .bar {
   position: relative;
   display: block;
-  width: 320px;
+  width: 90%;
 }
 .bar:before, .bar:after {
   content: "";
@@ -108,7 +126,7 @@ input:focus ~ label, input:valid ~ label {
   width: 0;
   bottom: 0;
   position: absolute;
-  background: palevioletred;
+  background: blueviolet;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
@@ -127,21 +145,24 @@ input:focus ~ .bar:after {
 }
 
 .subscribe-btn {
-  width: 80%;
+  width: 75%;
+  margin-right: 5%;
+  margin-bottom: 5%;
   text-align: center;
   display: inline-block;
-  color: palevioletred;;
+  color: blueviolet;
   font-weight: 700;
   text-decoration: none;
   user-select: none;
   padding: .5em 2em;
   outline: none;
-  border: 2px solid;
+  border: 0.2em solid;
   border-radius: 1px;
+  border-color: palevioletred;
   transition: 0.2s;
 } 
-.subscribe-btn:hover { background: rgba(255,255,255,.2); }
-.subscribe-btn:active { background: palevioletred;; }
+.subscribe-btn:hover { background: rgba(204,102,255, 0.2); }
+.subscribe-btn:active { background: blueviolet; }
 
 .search
 {
@@ -152,11 +173,26 @@ input:focus ~ .bar:after {
 
 .search-btn
 {
-  width: 30%;
+  display: block;
+  text-align: center;
+  width: 10%;
   height: 50%;
+  padding-left: 0;
+  margin-right: 5%;
 }
 
 .serach-bar
 {
   width: 70%;
+}
+
+.tegs
+{
+  margin-right: 5%;
+  font-family: 'Farsan', cursive;
+  text-align: center;
+  overflow: hidden;
+	font-size: 1em;
+  color: #7d7d7d;	
+  border: 4px double blueviolet;
 }

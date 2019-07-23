@@ -2,7 +2,9 @@
 {
   display: flex;
   justify-content: space-between;
-  margin: 1em;
+  background: #ee99ff;
+  padding: 1em;
+  border-bottom: 4px double blueviolet;
 }
 
 .main-logo
@@ -32,10 +34,17 @@
 
 .menu-item
 {
+  font-family: 'Old Standard TT', serif;
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
-  margin: 0.5rem;
+  margin: 0.7rem;
+}
+
+.menu-item:hover
+{
+  color: blueviolet;
+  text-decoration: underline;
 }
 
 .icon

@@ -1,19 +1,28 @@
 .page-wrapper
 {
+  background: #ffebfa;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 75% 25%;
   grid-gap: 3em;
-
-    margin-right: auto;
-  margin-left: auto;   
+  margin-left: auto;
+  margin-right: auto;
 }
 
 html{
   box-sizing: border-box;
 }
+
+.content
+{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 3em;
+}
+
+
   
-  header,
-  footer {
-    grid-column: 1 / span 2;
+.page-wrapper header,
+.page-wrapper footer {
+    grid-column: 1/span 2;
+    z-index: 0;
   }

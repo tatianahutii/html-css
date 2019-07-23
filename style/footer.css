@@ -1,0 +1,17 @@
+.footer-wrapper
+{
+  display: flex;
+  background: #ee99ff;
+  padding: 1em;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  border-top: 4px double blueviolet;
+}
+
+.footer-text
+{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
