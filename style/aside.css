@@ -213,6 +213,12 @@ input:focus ~ .bar:after {
   border: 4px double blueviolet;
 }
 
+.comments
+{
+  display: flex;
+  flex-direction: column;
+}
+
 .comment-container
 {
   margin-top: 10px;
@@ -225,10 +231,8 @@ input:focus ~ .bar:after {
 
 .comment-author-foto
 {
-  width: 15%;
-  height: auto;
-  display: block;
-  align-self: center;
+  display: flex;
+  margin-right: 2%;
 }
 
 .comment-author-foto img
@@ -238,18 +242,31 @@ input:focus ~ .bar:after {
       object-fit: cover;
 }
 
-.comment-text
+.comment-text p
 {
+  display: block; 
   white-space: nowrap;
   overflow: hidden;
   padding: 5px;
   text-overflow: ellipsis;
 }
 
+.comment-content
+{
+  width: 60%;
+}
+
 @media screen and (max-width: 768px) {
   .author-information
   {
     display: none;
+  }
+
+  .comment-author-foto
+  {
+    width: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .content
