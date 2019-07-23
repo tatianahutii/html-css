@@ -1,12 +1,12 @@
 .page-wrapper
 {
-    max-width: 1200px;
-    margin-right: auto;
-  margin-left: auto;
+  max-width: 1200px;
   display: grid;
-    grid-template-columns: 75% 25%;
-    grid-gap: 3em;
-    
+  grid-template-columns: 75% 25%;
+  grid-gap: 3em;
+
+    margin-right: auto;
+  margin-left: auto;   
 }
 
 html{
