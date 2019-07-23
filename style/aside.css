@@ -33,19 +33,31 @@
 .author-name
 {
   font-family: 'Old Standard TT', serif;
-  font-size: 1rem;
+  font-size: 2vw;
   display: flex;
   justify-content: center;
   color: #344055;
 }
 
-.author-information .author-description > p {
+.author-information .author-description > p, 
+.hiden-author-information  .author-description > p {
 	font-family: 'Farsan', cursive;
   text-align: center;
   overflow: hidden;
-	font-size: 15px;
+	font-size: 1rem;
 	color: #7d7d7d;	
 }
+
+.hiden-author-information  .author-description > p {
+  
+    font-size: 2vw;
+  }
+
+  .author-foto-hidden img {
+    max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+  }
 
 .icom-menu
 {
@@ -65,6 +77,12 @@
   display: block;
   position: relative;
   margin-bottom: 30px;
+  width: 100%;
+}
+
+.group .search-group
+{
+  width: 75%;
 }
 
 .group-btn
@@ -76,8 +94,10 @@
 .subscribe-input {
   font-size: 16px;
   padding: 10px;
+  padding-left: 0;
+  padding-right: 0;
   display: block;
-  width: 80%;
+  width: 100%;
   border: none;
   border-bottom: 1px solid #ccc;
 }
@@ -87,10 +107,9 @@
   font-size: 16px;
   padding: 10px;
   display: block;
-  width: 75%;
+  width: 90%;
   border: none;
   border-bottom: 1px solid #ccc;
-  margin-right: 5%;
 }
 input:focus {
   outline: none;
@@ -145,8 +164,7 @@ input:focus ~ .bar:after {
 }
 
 .subscribe-btn {
-  width: 75%;
-  margin-right: 5%;
+  width: 100%;
   margin-bottom: 5%;
   text-align: center;
   display: inline-block;
@@ -169,6 +187,7 @@ input:focus ~ .bar:after {
   display: flex;
   flex-direction: row;
   text-align: right;
+  justify-content: space-between;
 }
 
 .search-btn
@@ -177,8 +196,6 @@ input:focus ~ .bar:after {
   text-align: center;
   width: 10%;
   height: 50%;
-  padding-left: 0;
-  margin-right: 5%;
 }
 
 .serach-bar
@@ -188,7 +205,6 @@ input:focus ~ .bar:after {
 
 .tegs
 {
-  margin-right: 5%;
   font-family: 'Farsan', cursive;
   text-align: center;
   overflow: hidden;
@@ -196,3 +212,40 @@ input:focus ~ .bar:after {
   color: #7d7d7d;	
   border: 4px double blueviolet;
 }
+
+@media screen and (max-width: 768px) {
+  .author-information
+  {
+    display: none;
+  }
+
+  .content
+  {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .main-author-information
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 4px double blueviolet;
+    margin-bottom: 5%;
+    padding-right: 5%;
+  }
+
+  .author-foto-hidden
+  {
+    width: 30%;
+    height: auto;
+  }
+
+  .hiden-author-information
+  {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+  }
+  }
