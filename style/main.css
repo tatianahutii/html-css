@@ -53,12 +53,12 @@
 }
 
 .container .product-details > p {
+  margin: 0%;
 	font-family: 'Farsan', cursive;
   text-align: center;
   overflow: hidden;
 	font-size: 15px;
-	color: #7d7d7d;
-	
+	color: #7d7d7d;	
 }
 
 .product-image {
