@@ -1,0 +1,19 @@
+.page-wrapper
+{
+    max-width: 1200px;
+    margin-right: auto;
+  margin-left: auto;
+  display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 3em;
+    
+}
+
+html{
+  box-sizing: border-box;
+}
+  
+  header,
+  footer {
+    grid-column: 1 / span 2;
+  }
